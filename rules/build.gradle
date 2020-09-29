@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    // used for lint rules
+    compileOnly "com.android.tools.lint:lint-api:27.0.1"
+    compileOnly "com.android.tools.lint:lint-checks:27.0.1"
+
+    // https://mvnrepository.com/artifact/com.android.tools.lint/lint-tests
+    compileOnly group: 'com.android.tools.lint', name: 'lint-tests', version: '27.0.1'
+}
